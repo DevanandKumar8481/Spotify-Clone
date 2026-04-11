@@ -49,10 +49,10 @@ Spotify-Clone/
 ---
 ## ⚠️ Challenges & Learnings  
 
-- Implemented **Git LFS** to handle large audio files  
-- Resolved **deployment issues on Netlify**  
-- Fixed **file path & case sensitivity bugs**  
-- Improved understanding of **project structure & asset management**  
+- Implemented ** Git LFS ** to handle large audio files  
+- Resolved ** deployment issues on Netlify **  
+- Fixed ** file path & case sensitivity bugs **  
+- Improved understanding of ** project structure & asset management **  
 
 ---
 
@@ -68,7 +68,7 @@ Spotify-Clone/
 
 ## 👤 Author  
 
-**Devanand Kumar**  
+__Devanand Kumar__
 
 - 💼 LinkedIn: https://www.linkedin.com/in/devanand-kumar-71268038b/   
 
