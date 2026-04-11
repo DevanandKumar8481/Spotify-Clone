@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone </title>
+
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Link css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+    <div class="main_container">
+        <!-- Upper part -->
+        <nav class="upper">
+
+            <!--Left side -->
+            <div class="left-half">
+
+                <div class="logo"><i class="fa-brands fa-spotify"></i></div>
+                <div class="home-icon"><i class="fa-solid fa-house"></i></div>
+                <div class="search-bar">
+
+                    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" class="input-box" placeholder="What do you want to play?">
+                    <div class="browse"><i class="fa-solid fa-folder-open"></i></div>
+                </div>
+            </div>
+            <!--Right side -->
+            <div class="right-half">
+
+                <div class="right-half-p1">
+                    <div class="anothertab">
+                        <a href="https://www.spotify.com/in-en/premium/" target="_blank">Premium</a>
+                    </div>
+       
+                    <div class="anothertab">
+                        <a href="https://support.spotify.com/in-en/" target="_blank">Support</a>
+                    </div>
+
+                    <div class="anothertab">
+                        <a href="https://www.spotify.com/in-en/download/mac/" target="_blank">Download</a>
+                    </div>
+                </div>
+
+                <div class="right-half-p2">
+                    <div class="anothertab">
+                        <a href="https://open.spotify.com/download" target="_blank">install App</a>
+                    </div>
+
+                    <div class="anothertab">
+                        <a href="https://www.spotify.com/in-en/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F" target="_blank">Sign Up</a>
+                    </div>
+
+                    <div id="login" >
+                        <a href="https://accounts.spotify.com/en-GB/login?continue=https%3A%2F%2Fopen.spotify.com%2Fdownload" target="_blank">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="lower">
+
+            <!--Sidebar-->
+            <div class="sidebar">
+                <div>
+                    <h2>Your Library</h2>
+                    <div  id="Create"><h2>+ Create </h2></div>
+                </div>
+                <br><br>
+                <div class="box">
+                    <h2>Create Your first playlist</h2>
+                    <br>
+                    <p>it's easy,we'll help you</p>
+                    <div class="subbox" >Create Playlist</div>
+                </div>
+
+                <div class="box">
+                    <h2>Let's find some podcasts to follow</h2>
+                    <p>We'll keep you updated on new episodes</p>
+                    <div class="subbox">Browse podcasts</div>
+                </div>
+
+                <div class="information">
+                    <a href="https://www.spotify.com/in-en/legal/end-user-agreement/" target="_blank"><p>Legal</p></a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy" target="_blank"><p>Safety&Privacy Center</p></a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/" target="_blank"><p>Privacy Policy</p></a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/" target="_blank"><p>Cookies</p></a>
+                    <br>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" target="_blank"><p>About Ads</p></a>
+                    <a href="https://www.spotify.com/in-en/accessibility" target="_blank"><p>Accessibility</p></a>
+            
+                </div>
+            </div>
+
+            <!--Main content -->
+            <div class="maincontent">
+                <!--Trending Songs-->
+                <div class="music_section">
+                    <h1>Trending Songs</h1>
+                    
+                    <div class="song" >
+
+                        <div class="card" data-id="1">
+                            <img src="Images/1.jpeg">
+                            <div class="music-play-btn"><i id="1" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Gehra Hua</div>
+                            <div class="img-description">(From Dhurandhar)</div>
+                        </div>
+
+                        <div class="card" data-id="2">
+                            <img src="Images/2.jpeg">
+                            <div class="music-play-btn"><i id="2" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Shararat</div>
+                            <div class="img-description">(From Dhurandhar)</div>
+                        </div>
+
+                        <div class="card" data-id="3">
+                            <img src="Images/3.jpeg">
+                            <div class="music-play-btn"><i id="3" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Tum Ho To</div>
+                            <div class="img-description">(From "Saiyaara")</div>
+                        </div>
+
+                        <div class="card" data-id="4">
+                            <img src="Images/4.jpeg">
+                            <div class="music-play-btn"><i id="4" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Saiyaara</div>
+                            <div class="img-description">Tanishk Bagchi,Faheem Abdullah </div>
+                        </div>
+
+                        <div class="card" data-id="5">
+                            <img src="Images/5.jpeg">
+                            <div class="music-play-btn"><i id="5" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Dopamine</div>
+                            <div class="img-description">Punjabi song</div>
+                        </div>
+
+                        <div class="card" data-id="14">
+                            <img src="Images/14.jpeg">
+                            <div class="music-play-btn"><i id="14" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Surmedani</div>
+                            <div class="img-description">Bajre Da Sitta</div>
+                        </div>
+
+                        <div class="card" data-id="7">
+                            <img src="Images/7.jpeg">
+                            <div class="music-play-btn"><i id="7" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Tere liye</div>
+                            <div class="img-description">Best Song</div>
+                        </div>
+
+                        <div class="card" data-id="8">
+                            <img src="Images/8.jpeg">
+                            <div class="music-play-btn"><i id="8" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Mere Baba</div>
+                            <div class="img-description">Song</div>
+                        </div>
+
+                        <div class="card" data-id="9">
+                            <img src="Images/9.jpeg">
+                            <div class="music-play-btn"><i id="9" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Lo Safar </div>
+                            <div class="img-description">Hit Song</div>
+                        </div>
+
+                        <div class="card" data-id="10">
+                            <img src="Images/10.jpeg">
+                            <div class="music-play-btn"><i id="10" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Raataan lambiyan </div>
+                            <div class="img-description">Romantic Song</div>
+                        </div>
+
+                    </div >
+                </div>    
+
+                <!--Popular Artist-->
+                <div class="artistsection">
+
+                    <h1>Popular artists</h1>
+                    <br>
+                    <div class="artistlist">
+
+                        <div class="artist">
+                            <img src="Photo/1.jpeg">
+                            <div class="play_button"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="artistname">Arijit Singh</div>
+                            <div class="description">Artist</div>
+                        </div>
+
+                        <div class="artist">
+                            <img src="Photo/2.jpeg">
+                            <div class="play_button"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="artistname">Parampara Tandon</div>
+                            <div class="description">Artist</div>
+                        </div>
+
+                        <div class="artist">
+                            <img src="Photo/3.jpeg">
+                            <div class="play_button"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="artistname">Mohit Chauhan</div>
+                            <div class="description">Artist</div>
+                        </div>
+
+                        <div class="artist">
+                            <img src="Photo/4.jpeg">
+                            <div class="play_button"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="artistname">Sachin-Jigar</div>
+                            <div class="description">Artist</div>
+                        </div>
+
+                        <div class="artist">
+                            <img src="Photo/5.jpeg">
+                            <div class="play_button"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="artistname">Sonu Nigam</div>
+                            <div class="description">Artist</div>
+                        </div>
+
+                        <div class="artist">
+                            <img src="Photo/6.jpeg">
+                            <div class="play_button"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="artistname">Shreya Ghoshal</div>
+                            <div class="description">Artist</div>
+                        </div>
+
+                        <div class="artist">
+                            <img src="Photo/7.jpeg">
+                            <div class="play_button"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="artistname">Atif Aslam</div>
+                            <div class="description">Artist</div>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                
+
+                <br>
+
+                <!--Devotional Hits-->
+                <div class="music_section">
+                    <h1>Devotional Hits</h1>
+                    <br><br>
+                    <div class="song">
+
+                        <div class="card" data-id="8">
+                            <img src="Images/8.jpeg">
+                            <div class="music-play-btn"><i id="8" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Mere Baba</div>
+                            <div class="img-description">Jubin Nautiyal,Payal dev</div>
+                        </div>
+
+                        <div class="card" data-id="12" >
+                            <img src="Images/12.jpeg">
+                            <div class="music-play-btn"><i id="12" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Namo Namo</div>
+                            <div class="img-description">The best  music to relax your mind</div>
+                        </div>
+
+                        <div class="card" data-id="13">
+                            <img src="Images/13.jpeg">
+                            <div class="music-play-btn"><i id="13" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Narayan Mil Jayega</div>
+                            <div class="img-description">Jubin Nautiyal ,Payal Dev ,Manoj Muntashir</div>
+                        </div>
+
+                        <div class="card" data-id="12">
+                            <img src="Images/12.jpeg">
+                            <div class="music-play-btn"><i id="12" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Namo Namo</div>
+                            <div class="img-description">Mahadev Song</div>
+                        </div>
+
+                        <div class="card" data-id="6">
+                            <img src="Images/6.jpeg">
+                            <div class="music-play-btn"><i id="6" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Ram Siya Ram</div>
+                            <div class="img-description">The best music to relax your mind</div>
+                        </div>
+
+                        <div class="card" data-id="8">
+                            <img src="Images/8.jpeg">
+                            <div class="music-play-btn"><i id="8" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Mere Baba</div>
+                            <div class="img-description">Jubin Nautiyal,Payal dev</div>
+                        </div>
+
+                        <div class="card" data-id="12">
+                            <img src="Images/12.jpeg">
+                            <div class="music-play-btn"><i id="12" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Namo Namo</div>
+                            <div class="img-description">The best  music to relax your mind</div>
+                        </div>
+
+                        <div class="card" data-id="13">
+                            <img src="Images/13.jpeg">
+                            <div class="music-play-btn"><i id="13" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Narayan Mil Jayega</div>
+                            <div class="img-description">Jubin Nautiyal ,Payal Dev ,Manoj Muntashir</div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <br>
+
+                <!--Popular Songs-->
+                <div class="music_section">
+                    <h1>Popular Songs</h1>
+                    <br><br>
+                    <div class="song">
+                    
+                        <div class="card" data-id="9">
+                            <img src="Images/9.jpeg">
+                            <div class="music-play-btn"><i id="9" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Lo Safar </div>
+                            <div class="img-description">Song</div>
+                        </div>
+
+                        <div class="card" data-id="10">
+                            <img src="Images/10.jpeg">
+                            <div class="music-play-btn"><i id="10" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Raataan Lambiyan</div>
+                            <div class="img-description">Song</div>
+                        </div>
+
+                        <div class="card" data-id="5">
+                            <img src="Images/5.jpeg">
+                            <div class="music-play-btn"><i id="5" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Dopamine</div>
+                            <div class="img-description">Punjabi song </div>
+                        </div>
+
+                        <div class="card" data-id="7">
+                            <img src="Images/7.jpeg">
+                            <div class="music-play-btn"><i id="7" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Tere Liye</div>
+                            <div class="img-description">Song</div>
+                        </div>
+
+                        <div class="card" data-id="3">
+                            <img src="Images/3.jpeg">
+                            <div class="music-play-btn"><i id="3" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Tum Ho To</div>
+                            <div class="img-description">Song</div>
+                        </div>
+
+                        <div class="card" data-id="5">
+                            <img src="Images/5.jpeg">
+                            <div class="music-play-btn"><i id="5" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Dopamine</div>
+                            <div class="img-description">Punjabi Song</div>
+                        </div>
+
+                        <div class="card" data-id="2">
+                            <img src="Images/2.jpeg">
+                            <div class="music-play-btn"><i id="2" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Shararat </div>
+                            <div class="img-description">From Dhurandhar</div>
+                        </div>
+
+                        <div class="card" data-id="1">
+                            <img src="Images/1.jpeg">
+                            <div class="music-play-btn"><i id="1" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Gehra Hua </div>
+                            <div class="img-description">From Dhurandhar</div>
+                        </div>
+
+                        <div class="card" data-id="3">
+                            <img src="Images/3.jpeg">
+                            <div class="music-play-btn"><i id="3" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Tum Ho To </div>
+                            <div class="img-description">From Saiyaara</div>
+                        </div>
+
+                        <div class="card" data-id="14">
+                            <img src="Images/14.jpeg">
+                            <div class="music-play-btn"><i id="14" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Surmedani </div>
+                            <div class="img-description">Punjabi Song</div>
+                        </div>
+
+                        <div class="card" data-id="11">
+                            <img src="Images/11.jpeg">
+                            <div class="music-play-btn"><i id="11" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Sorry Sorry</div>
+                            <div class="img-description">Bhojpuri Song ,Pawan Songh ,Kajal Ragwani</div>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+
+                <!--Most Played Song-->
+                <div class="music_section">
+                    <h1>Most Played Song</h1>
+                    <br><br>
+                    <div class="song">
+                    
+                        <div class="card" data-id="3">
+                            <img src="Images/3.jpeg">
+                            <div class="music-play-btn"><i id="3" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Tum Ho To </div>
+                            <div class="img-description">From Saiyaara</div>
+                        </div>
+
+                        <div class="card" data-id="14">
+                            <img src="Images/14.jpeg">
+                            <div class="music-play-btn"><i id="14" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Surmedani </div>
+                            <div class="img-description">Punjabi Song</div>
+                        </div>
+
+                        <div class="card" data-id="11">
+                            <img src="Images/11.jpeg">
+                            <div class="music-play-btn"><i id="11" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Sorry Sorry</div>
+                            <div class="img-description">Bhojpuri Song</div>
+                        </div>
+
+                        <div class="card" data-id="1">
+                            <img src="Images/1.jpeg">
+                            <div class="music-play-btn"><i id="1" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Gehra Hua</div>
+                            <div class="img-description">(From Dhurandhar)</div>
+                        </div>
+
+                        <div class="card" data-id="2">
+                            <img src="Images/2.jpeg">
+                            <div class="music-play-btn"><i id="2" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Shararat</div>
+                            <div class="img-description">(From Dhurandhar)</div>
+                        </div>
+
+                        <div class="card" data-id="3">
+                            <img src="Images/3.jpeg">
+                            <div class="music-play-btn"><i id="3" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Tum Ho To</div>
+                            <div class="img-description">(From "Saiyaara")</div>
+                        </div>
+
+                        <div class="card" data-id="4">
+                            <img src="Images/4.jpeg">
+                            <div class="music-play-btn"><i id="4" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Saiyaara</div>
+                            <div class="img-description">Tanishk Bagchi,Faheem Abdullah </div>
+                        </div>
+
+
+                    </div>
+                    <br>
+                    
+                </div>  
+                <hr> 
+
+                <!--More information-->
+                <div class="more">
+                    <div class="gyan">
+                        <h2>Company</h2>
+                        <br>
+                        <a href="https://www.spotify.com/in-en/about-us/contact/" target="_blank">About</a>
+                        <a href="https://www.lifeatspotify.com" target="_blank">Jobs</a>
+                        <a href="https://newsroom.spotify.com" target="_blank">For the Record</a>
+            
+                    </div>
+
+                    <div class="gyan">
+                        <h2>Communities</h2>
+                        <br>
+                        <a href="https://artists.spotify.com/home" target="_blank">For Artists</a>
+                        <a href="https://developer.spotify.com" target="_blank">Developers</a>
+                        <a href="https://ads.spotify.com/en-IN/" target="_blank">Advertising</a>
+                        <a href="https://investors.spotify.com/home/default.aspx" target="_blank">Investors</a>
+                        <a href="https://spotifyforvendors.com" target="_blank">Vendors</a>
+
+                    </div>
+
+                    <div class="gyan">
+                        <h2>Useful links</h2>
+                        <br>
+                        <a href="https://support.spotify.com/in-en/" target="_blank">Support</a>
+                        <a href="https://www.spotify.com/in-en/free/" target="_blank">Free Mobile App</a>
+                    </div>
+
+                    <div class="gyan">
+                        <h2>Spotify plans</h2>
+                        <a href="https://www.spotify.com/in-en/premium/#ref=spotifycom_footer_lite">Premium Lite</a>
+                        <a href="https://www.spotify.com/in-en/premium/#ref=spotifycom_footer_premium_individual">Premium Standard</a>
+                        <a href="https://www.spotify.com/in-en/platinum/#ref=spotifycom_footer_platinum">Premium Platinum</a>
+                        <a href="https://www.spotify.com/in-en/student/#ref=spotifycom_footer_premium_student">Premium Student</a>
+                        <a href="https://www.spotify.com/in-en/free/#ref=spotifycom_footer_free">Spotify Free</a>
+                    </div>
+
+                    <br>
+                    <div class="social">
+                        <a href="https://x.com/@Spotify" target="_blank"><img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/x-jvgvt5gje92oz29ez4fgd.png/x-0muuxjzgzvtlpaduv3p4k2s.png?_a=DATAiZAAZAA0" alt=""></a>
+                        <a href="https://www.linkedin.com/company/spotify" target="_blank"><img src="https://www.svgrepo.com/show/144030/linkedin-square-logo.svg" alt="linkedin"></a>
+                        <a href="https://www.instagram.com/spotify" target="_blank"><img src="https://www.svgrepo.com/show/353905/instagram-icon.svg" alt="insta"></a>
+                    </div>
+         
+                </div>
+                <hr>
+                <br>
+                <p>Copyright &copy; 2026 Spotify AB</p>
+
+            </div>
+       
+        </div>
+
+    <!-- player -->
+    <div class="player-bar">
+        <div class="now-bar">
+            <img src="Images/1.jpeg" alt="">
+            <div>
+                <div class="img-title-info">Gehra Hua</div>
+                <div class="img-des-info">song</div>
+            </div>
+        </div>
+        <div class="music-controller">
+            <div class="player">
+                <div><i id="shuffle" class="player-btns fa-solid fa-shuffle"></i></div>
+                <div><i id="backward" class="player-btns fa-solid fa-backward-step"></i></div>
+                <div><i id="play" class="player-btns fa-solid fa-circle-play"></i></div>
+                <div><i id="forward" class="player-btns fa-solid fa-forward-step"></i></div>
+                <div><i id="repeat" class="player-btns fa-solid fa-repeat"></i></div>
+            </div>
+
+            <div>
+                <input type="range" id="progressBar" value="0">
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <script src="first.js"></script>
+    
+</body>
+</html>
