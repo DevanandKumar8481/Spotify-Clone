@@ -40,7 +40,7 @@ Spotify-Clone/
 │── README.md
 │── .gitattributes
 │── .gitignore
-
+```
 ---
 ## ⚠️ Challenges & Learnings  
 
