@@ -8,9 +8,7 @@ A responsive **Spotify-inspired music player** built using HTML, CSS, and JavaSc
 🔗 https://spotify-clonewebmusic.netlify.app  
 
 ---
-
 ## 📌 Features  
-
 - 🎵 Play / Pause music functionality  
 - 📂 Dynamic song handling
 - 🔀 Shuffle playback (random song play)  
@@ -20,16 +18,13 @@ A responsive **Spotify-inspired music player** built using HTML, CSS, and JavaSc
 - 📱 Responsive design (mobile-friendly)  
 - 🎨 Clean and modern UI inspired by Spotify  
 - ⚡ Smooth user experience  
- 
 ---
 
 ## 🛠️ Tech Stack  
-
 - **Frontend:** HTML, CSS, JavaScript  
 - **Deployment:** Netlify  
 - **Version Control:** Git & GitHub  
 - **Large File Handling:** Git LFS  
-
 ---
 
 ## 📁 Project Structure  
