@@ -12,11 +12,15 @@ A responsive **Spotify-inspired music player** built using HTML, CSS, and JavaSc
 ## 📌 Features  
 
 - 🎵 Play / Pause music functionality  
-- 📂 Dynamic song handling  
+- 📂 Dynamic song handling
+- 🔀 Shuffle playback (random song play)  
+- ▶️ Continuous playback (auto play next song)  
+- 🔁 Repeat playback (repeat current track)
+- 🔐 Interactive navigation 
 - 📱 Responsive design (mobile-friendly)  
 - 🎨 Clean and modern UI inspired by Spotify  
 - ⚡ Smooth user experience  
-
+ 
 ---
 
 ## 🛠️ Tech Stack  
@@ -41,3 +45,33 @@ Spotify-Clone/
 │── README.md
 │── .gitattributes
 │── .gitignore
+
+---
+## ⚠️ Challenges & Learnings  
+
+- Implemented **Git LFS** to handle large audio files  
+- Resolved **deployment issues on Netlify**  
+- Fixed **file path & case sensitivity bugs**  
+- Improved understanding of **project structure & asset management**  
+
+---
+
+## 🔮 Future Improvements  
+
+- ⏱ Add song progress bar timing  & seek functionality  
+- 🔊 Volume control  
+- 🔍 Search feature  
+- 🎶 Playlist system  
+- ⚛️ Convert to React for scalability  
+
+---
+
+## 👤 Author  
+
+**Devanand Kumar**  
+
+- 💼 LinkedIn: https://www.linkedin.com/in/devanand-kumar-71268038b/   
+
+---
+
+
