@@ -721,6 +721,7 @@ input[type="range"]::-webkit-slider-thumb{
  
     /* PLAYER BAR - Fixed bottom */
     .player-bar {
+        display: flex;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -739,7 +740,7 @@ input[type="range"]::-webkit-slider-thumb{
         box-sizing: border-box;
     }
  
-    /* Progress bar - sabse upar */
+    /* Progress bar - */
     .music-controller {
         order: 1;
         width: 100%;
@@ -758,10 +759,10 @@ input[type="range"]::-webkit-slider-thumb{
     }
  
     .player {
-        justify-content: center;
-        gap: 4px;
         display: flex;
+        justify-content: center;
         align-items: center;
+        gap: 4px;
     }
  
     .player-btns {
@@ -777,7 +778,6 @@ input[type="range"]::-webkit-slider-thumb{
     .now-bar {
         order: 2;
         display: flex;
-
         justify-content: flex-start;
         gap: 8px;
         width:100%;
@@ -895,7 +895,6 @@ input[type="range"]::-webkit-slider-thumb{
         font-size: 0.70rem;
         min-width: 0;
         max-width: 48vw;
-        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         margin-left: 0;
