@@ -871,6 +871,38 @@ input[type="range"]::-webkit-slider-thumb{
         padding: 0;
     }
 
+    .img-title-info {
+        font-size: 0.78rem;
+        min-width: 0;
+        max-width: 48vw; 
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: 0;
+
+    }
+
+    .img-des-info {
+        font-size: 0.70rem;
+        min-width: 0;
+        max-width: 48vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: 0;
+    }
+
+    #progressBar {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .player-btns {
+        margin: 0.2rem 0.4rem; 
+    }
+
+
+
 }
  
 
