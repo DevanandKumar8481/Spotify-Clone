@@ -254,7 +254,6 @@ nav {
     background-color: black;
     min-width: 70vw;
     height: 100vh;
-    
 }
 
 
@@ -296,6 +295,7 @@ nav {
     display: flex;
     overflow-x: auto;
     gap:20px;
+    scroll-behavior: smooth;
 }
 
 .img-title {
@@ -338,6 +338,7 @@ nav {
     text-align: center;
     overflow-x: scroll;
     gap: 20px;
+    scroll-behavior: smooth;
 
 }
 
@@ -442,6 +443,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 .music-controller{
     display: flex;
@@ -487,6 +489,7 @@ input[type="range"]::-webkit-slider-thumb{
     color: white;
     display: flex;
     align-items: center;
+    
 
 }
 
@@ -818,6 +821,7 @@ input[type="range"]::-webkit-slider-thumb{
 }
  
 /* Very small phones (≤380px) */
+
 @media (max-width: 380px) {
     .card {
         width: 9.5rem;
