@@ -7,10 +7,8 @@
 body{
     background-color: #000;
     color: white;
-    font-family: "Montserrat",sans-serif;
-    
+    font-family: "Montserrat",sans-serif;  
 }
-
 
 /* NavBar */
 nav {
@@ -19,7 +17,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 4rem;
-
 }
 
 .left-half {
@@ -66,7 +63,6 @@ nav {
     font-size: 1.5rem;
     color: rgb(179, 179, 179);
     padding: 0 0.7rem;
-
 }
 
 .search-bar:hover .search-icon {
@@ -101,8 +97,7 @@ nav {
     justify-content: end;
     margin-right: 2rem;
     color: white;
-    width: 48%;
-    
+    width: 48%;  
 }
 
 .right-half-p1 {
@@ -112,8 +107,7 @@ nav {
     margin: 0 1rem;
     padding: 0 1rem 0 0;
     border-right: 1px solid rgb(179, 179, 179);
-    gap:15px;
-   
+    gap:15px;  
 }
 
 .anothertab a{
@@ -127,8 +121,7 @@ nav {
 .anothertab a:hover {
     color: white;
     transform: scale(1.05);
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 
 .right-half-p2 {
@@ -150,23 +143,17 @@ nav {
     justify-content: center;
     margin: 3px;
     text-align: center;
-    transition: 0.2s;
-    
+    transition: 0.2s;  
 }
 
 #login a{
     text-decoration: none;
     color: #121212;
-    
-
 }
 
 #login:hover {
     transform: scale(1.05);
-
 }
-
-
 
 /* LOWER SECTION */
 .lower{
@@ -180,13 +167,11 @@ nav {
     background-color: #121212;
     padding: 15px;
     overflow-y: auto;
-    margin-top: 2rem;
-    
+    margin-top: 2rem; 
 }
 
 .sidebar h2{
-    font-size: 18px;
-    
+    font-size: 18px;  
 }
 
 /* BOXES */
@@ -194,8 +179,7 @@ nav {
     background-color: #242424;
     margin-top: 15px;
     padding: 35px;
-    border-radius: 10px;
-    
+    border-radius: 10px;   
 }
 
 .subbox{
@@ -209,7 +193,6 @@ nav {
     font-size: 16px;
     text-align: center;
     font-weight: 700;
-
     cursor: pointer;
 }
 
@@ -230,7 +213,6 @@ nav {
 #Create:hover{
     transform: scale(1.06);
     background-color: rgb(54, 51, 51)
-
 }
 
 /* LINKS */
@@ -238,9 +220,7 @@ nav {
     text-decoration: none;
     color: #b3b3b3;
     font-size: 12px;
-    margin: 5px;
-   
-    
+    margin: 5px;    
 }
 
 .information a:hover{
@@ -256,23 +236,20 @@ nav {
     height: 100vh;
 }
 
-
 /* HEADINGS */
 .maincontent h1{
     font-size: 24px;
-    margin-bottom: 10px;
-   
+    margin-bottom: 10px; 
 }
 
-
 /* Card */
-
 .card{
     width: 22rem;
     padding: 0.7rem;
     border-radius: 10px;
     position: relative;
 }
+
 .card img{
     height: 15rem;
     width: 15rem;
@@ -296,6 +273,12 @@ nav {
     overflow-x: auto;
     gap:20px;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none;
+}
+
+.song::-webkit-scrollbar { 
+    display: none; 
 }
 
 .img-title {
@@ -308,7 +291,6 @@ nav {
     font-size: 0.9rem;
     color: rgb(199, 199, 199);
 }
-
 
 .music-play-btn {
     color: rgb(32, 234, 32);
@@ -323,7 +305,6 @@ nav {
     transition: 0.3s;
 }
 
-
 .card:hover .music-play-btn {
     opacity: 1;
     transform: translate(170px, -60px);
@@ -331,15 +312,20 @@ nav {
 
 .artistsection{
     margin-left: 30px;
-
 }
+
 .artistlist{
     display: flex;
     text-align: center;
     overflow-x: scroll;
     gap: 20px;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
 
+.artistlist::-webkit-scrollbar {
+    display: none;
 }
 
 .artist{
@@ -347,15 +333,14 @@ nav {
     height: 20rem;
     padding: 0.7rem;
     border-radius: 10px;
-    position: relative;
-    
-    
+    position: relative; 
 }
 
 .description{
     margin:0.9rem;
     color: rgb(199,199,199);
 }
+
 .artist img{
     display: flex;
     flex-direction: column;
@@ -367,6 +352,7 @@ nav {
     background-color: aliceblue;
     cursor:pointer;
 }
+
 .artistname{
     font-size: 1.2rem;
     font-weight: 400;
@@ -377,15 +363,12 @@ nav {
     background-color:#222121;
 }
 
-
-
 .more{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-decoration: none;
     color: rgb(244, 243, 243);
-    margin-top: 20px;
-   
+    margin-top: 20px;  
 }
 
 .gyan a{
@@ -404,17 +387,13 @@ nav {
     color: white;
     text-decoration:underline;
     cursor: pointer;
-
- 
 }
-
 
 .social{
     display: flex;
     gap:8px;
     margin:8px;
     align-items:center;
-
 }
 
 .social img{
@@ -425,17 +404,13 @@ nav {
     transition: filter 0.3s ease;
     border:1px solid rgb(16, 15, 15);
     border-radius: 50%;
-
 }
-
 
 .social img:hover{
     filter: grayscale(0) invert(0);
 }
 
-
 /* Player */
-
 .player-bar{
     width: 100%;
     height: 5rem;
@@ -444,26 +419,34 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
+    z-index: 1000;
+    background-color: #181818;
+    border-top: 1px solid #333;
 }
+
 .music-controller{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .player{
     display: flex;
     align-items: center;
 }
+
 .player-btns{
     font-size: 1.1rem;
     margin: 0.4rem 1rem;
     color: rgb(190, 190, 190);
     cursor: pointer;
 }
+
 .player-btns:hover{
     transform: scale(1.02);
     color: rgb(232, 232, 232);
 }
+
 #play{
     font-size: 2.3rem;
     color: white;
@@ -477,6 +460,7 @@ nav {
     border-radius: 5px;
     cursor: pointer;
 }
+
 input[type="range"]::-webkit-slider-thumb{
     appearance: none;
     width: 10px;
@@ -489,8 +473,6 @@ input[type="range"]::-webkit-slider-thumb{
     color: white;
     display: flex;
     align-items: center;
-    
-
 }
 
 .player-bar img{
@@ -500,10 +482,12 @@ input[type="range"]::-webkit-slider-thumb{
     padding: 0.3rem;
     margin-left: 1rem;
 }
+
 .img-title-info{
     font-size: 1.0rem;
     margin-left: 1rem;
 }
+
 .img-des-info{
     font: 0.8rem;
     color: rgb(192, 192, 192);
@@ -513,12 +497,12 @@ input[type="range"]::-webkit-slider-thumb{
 .active{
     color: rgb(0, 255, 0);
 }
+
 .active:hover{
     color: rgb(0, 255, 0);
 }
 
 /* Responsive */
-
 /* Mobile (≤768px) */
 @media (max-width: 768px) {
     body {
@@ -925,9 +909,6 @@ input[type="range"]::-webkit-slider-thumb{
     .player-btns {
         margin: 0.2rem 0.4rem; 
     }
-
-
-
 }
  
 
