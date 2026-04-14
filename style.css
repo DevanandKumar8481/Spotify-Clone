@@ -852,6 +852,25 @@ input[type="range"]::-webkit-slider-thumb{
         padding:6px 8px 10px;
 
     }
+
+    .now-bar {
+        width:100%;
+        min-width:0;
+        overflow:hidden;
+        gap:6px;
+
+    }
+
+
+    .player-bar img {
+        height: 3rem;
+        width: 3rem;
+        min-width: 3rem;  
+        flex-shrink: 0;
+        margin-left: 0;
+        padding: 0;
+    }
+
 }
  
 
