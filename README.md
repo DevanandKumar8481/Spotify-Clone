@@ -5,7 +5,7 @@ A responsive **Spotify-inspired music player** built using HTML, CSS, and JavaSc
 ---
 
 ## 🚀 Live Demo  
-🔗 https://spotify-clonewebmusic.netlify.app  
+🔗 https://spotify-clonewebsi.netlify.app 
 
 ---
 ## 📌 Features  
